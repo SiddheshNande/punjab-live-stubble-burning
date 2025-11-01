@@ -6,14 +6,22 @@ st.markdown(
         background: linear-gradient(135deg, #1e5631 10%, #a7c957 100%);
         color: white;
     }
-    div[data-baseweb="slider"] > div > div > div {
-        background-color: #2196F3 !important;  /* filled track (blue) */
+   div[data-baseweb="slider"] > div > div {
+        background: #2196F3 !important;  /* Blue track */
     }
 
-    div[data-baseweb="slider"] > div > div > div:nth-child(2) {
-        background-color: white !important;    /* knob (thumb) */
-        border: 2px solid #2196F3 !important;  /* optional blue outline */
-        box-shadow: 0px 0px 6px rgba(255,255,255,0.6);
+    /* Empty track color */
+    div[data-baseweb="slider"] > div {
+        background: rgba(255, 255, 255, 0.3) !important;
+    }
+
+    /* The actual knob (thumb) */
+    div[data-baseweb="slider"] > div > div > div {
+        background: white !important;  /* White knob */
+        border: 2px solid #2196F3 !important; /* Blue outline */
+        box-shadow: 0px 0px 6px rgba(33, 150, 243, 0.6);
+        width: 22px !important;
+        height: 22px !important;
     }
     stSlider label, .stMarkdown p, .stSelectSlider label {
         color: white !important;
@@ -47,6 +55,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
