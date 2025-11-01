@@ -6,8 +6,13 @@ st.markdown(
         background: linear-gradient(135deg, #1e5631 10%, #a7c957 100%);
         color: white;
     }
-    input[type=range] {
-        accent-color: #2196F3; /* Cool blue shade */
+    div[data-baseweb="slider"] > div > div > div {
+        background-color: #2196F3 !important;  /* slider track (filled portion) */
+    }
+
+    div[data-baseweb="slider"] > div > div > div:nth-child(2) {
+        background-color: #90CAF9 !important;  /* lighter blue for thumb */
+        border: 2px solid white !important;
     }
     stSlider label, .stMarkdown p, .stSelectSlider label {
         color: white !important;
@@ -41,6 +46,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
