@@ -1,5 +1,6 @@
 import streamlit as st
-def main():import streamlit as st
+def main():
+    
 
 st.markdown(
     """
@@ -35,5 +36,6 @@ st.markdown(
 
 if __name__ == "__main__":
     main()
+
 
 
