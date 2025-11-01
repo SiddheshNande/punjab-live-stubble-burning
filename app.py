@@ -14,15 +14,6 @@ st.markdown(
     div[data-baseweb="slider"] > div {
         background: rgba(255, 255, 255, 0.3) !important;
     }
-
-    /* The actual knob (thumb) */
-    div[data-baseweb="slider"] > div > div > div {
-        background: white !important;  /* White knob */
-        border: 2px solid #2196F3 !important; /* Blue outline */
-        box-shadow: 0px 0px 6px rgba(33, 150, 243, 0.6);
-        width: 22px !important;
-        height: 22px !important;
-    }
     stSlider label, .stMarkdown p, .stSelectSlider label {
         color: white !important;
         font-weight: 500;
@@ -55,6 +46,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
