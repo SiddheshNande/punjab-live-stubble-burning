@@ -6,6 +6,13 @@ st.markdown(
         background: linear-gradient(135deg, #1e5631 10%, #a7c957 100%);
         color: white;
     }
+    input[type=range] {
+        accent-color: #2196F3; /* Cool blue shade */
+    }
+    stSlider label, .stMarkdown p, .stSelectSlider label {
+        color: white !important;
+        font-weight: 500;
+    }
     </style>
     """,
     unsafe_allow_html=True
@@ -34,6 +41,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
