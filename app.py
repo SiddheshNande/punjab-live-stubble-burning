@@ -7,12 +7,13 @@ st.markdown(
         color: white;
     }
     div[data-baseweb="slider"] > div > div > div {
-        background-color: #2196F3 !important;  /* slider track (filled portion) */
+        background-color: #2196F3 !important;  /* filled track (blue) */
     }
 
     div[data-baseweb="slider"] > div > div > div:nth-child(2) {
-        background-color: #90CAF9 !important;  /* lighter blue for thumb */
-        border: 2px solid white !important;
+        background-color: white !important;    /* knob (thumb) */
+        border: 2px solid #2196F3 !important;  /* optional blue outline */
+        box-shadow: 0px 0px 6px rgba(255,255,255,0.6);
     }
     stSlider label, .stMarkdown p, .stSelectSlider label {
         color: white !important;
@@ -46,6 +47,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
