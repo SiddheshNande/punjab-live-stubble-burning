@@ -3,7 +3,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background: linear-gradient(135deg, #56ab2f 50%, #a8e063 100%);
+        background: linear-gradient(135deg, #1e5631 10%, #a7c957 100%);
         color: white;
     }
     </style>
@@ -34,6 +34,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
