@@ -1,4 +1,15 @@
 import streamlit as st
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background: linear-gradient(135deg, #74ABE2 10%, #5563DE 100%);
+        color: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 def main():
     st.title("Monthwise Stubble Content mapping")
     months = ['September', 'October', 'November', 'December', 'January']
@@ -23,6 +34,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
