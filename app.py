@@ -15,11 +15,12 @@ def main():
         options=months
     )
     if selected_month:
-        st.write(f"Displaying image for: **{selected_month}**")
+        st.write(f"Displaying map for: **{selected_month}**")
 
         image_url = image_map[selected_month]
-        st.image(image_url, caption=f"This is the image for {selected_month}.")
+        st.image(image_url, caption=f"This is the map for {selected_month}.")
 
 
 if __name__ == "__main__":
     main()
+
